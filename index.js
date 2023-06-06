@@ -17,7 +17,7 @@ function toRoman(num) {
     let str = '';
 
     for (let i of Object.keys(roman)) {
-        var q = Math.floor(num / roman[i]);
+        let q = Math.floor(num / roman[i]);
         num -= q * roman[i];
         str += i.repeat(q);
     }
